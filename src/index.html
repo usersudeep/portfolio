@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sudeepa N S | SDET Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;scroll-behavior:smooth;}
+body{background:#0f172a;color:#e5e7eb;}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 8%;background:#111827;position:sticky;top:0;z-index:10;flex-wrap:wrap;}
+nav h2{color:white;}
+nav div a{color:#cbd5e1;text-decoration:none;margin-left:22px;font-size:15px;}
+nav div a:hover{color:#38bdf8;}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 20px;}
+.hero h1{font-size:52px;color:white;}
+.hero span{color:#38bdf8;}
+.hero p{margin-top:20px;font-size:19px;max-width:750px;line-height:1.7;color:#cbd5e1;}
+.hero .tags{margin-top:22px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:750px;}
+.hero .tags span{background:#1e293b;border:1px solid #334155;padding:6px 14px;border-radius:20px;font-size:13px;color:#94a3b8;}
+.btn{display:inline-block;margin-top:32px;padding:14px 32px;background:#38bdf8;color:#0f172a;border-radius:8px;text-decoration:none;font-weight:700;}
+section{padding:70px 10%;}
+h2{font-size:38px;margin-bottom:12px;color:#38bdf8;}
+.section-sub{color:#94a3b8;margin-bottom:35px;font-size:15px;}
+.about p{font-size:17px;line-height:1.8;color:#cbd5e1;margin-bottom:16px;}
+.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin-top:35px;}
+.stat{background:#1e293b;border:1px solid #334155;padding:22px;border-radius:12px;text-align:center;}
+.stat b{display:block;font-size:30px;color:#38bdf8;}
+.stat span{font-size:13px;color:#94a3b8;}
+.skills-group{margin-bottom:26px;}
+.skills-group h4{color:#f8fafc;font-size:15px;margin-bottom:12px;letter-spacing:.03em;text-transform:uppercase;color:#38bdf8;}
+.skills{display:flex;flex-wrap:wrap;gap:10px;}
+.skill{background:#1e293b;border:1px solid #334155;padding:9px 16px;border-radius:8px;font-size:14px;transition:.25s;}
+.skill:hover{background:#334155;transform:translateY(-3px);}
+.timeline{display:flex;flex-direction:column;gap:25px;}
+.job{background:#1e293b;padding:28px;border-radius:12px;border:1px solid #334155;}
+.job-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:18px;}
+.job-head h3{color:white;font-size:20px;}
+.job-head span{color:#38bdf8;font-size:14px;}
+.job h4{color:#f8fafc;font-size:15px;margin:18px 0 8px;}
+.job h4:first-of-type{margin-top:0;}
+.job ul{padding-left:20px;line-height:1.9;color:#cbd5e1;font-size:15px;}
+.job ul li::marker{color:#38bdf8;}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px;}
+.card{background:#1e293b;padding:26px;border-radius:12px;border:1px solid #334155;}
+.card h3{margin-bottom:12px;color:white;font-size:18px;}
+.card p{line-height:1.7;color:#cbd5e1;font-size:14.5px;margin-bottom:10px;}
+.card ul{padding-left:18px;color:#cbd5e1;font-size:14px;line-height:1.8;}
+.card .tech{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px;}
+.card .tech span{background:#0f172a;border:1px solid #334155;padding:4px 10px;border-radius:6px;font-size:11.5px;color:#38bdf8;}
+.achieve-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+.achieve{background:#1e293b;border-left:4px solid #38bdf8;padding:20px 22px;border-radius:8px;}
+.achieve b{color:white;font-size:15px;display:block;margin-bottom:4px;}
+.achieve span{color:#94a3b8;font-size:13.5px;line-height:1.6;}
+.coding-box{background:#1e293b;border:1px solid #334155;border-radius:12px;padding:30px;display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:space-between;}
+.coding-box .item{text-align:center;}
+.coding-box .item b{font-size:28px;color:#38bdf8;display:block;}
+.coding-box .item span{font-size:13px;color:#94a3b8;}
+.contact{text-align:center;}
+.contact p{margin:10px;font-size:18px;color:#cbd5e1;}
+.social-links{display:flex;justify-content:center;gap:20px;margin-top:30px;flex-wrap:wrap;}
+.social-links a{text-decoration:none;color:white;background:#1e293b;padding:15px 28px;border-radius:10px;transition:.3s;font-weight:600;border:1px solid #334155;}
+.social-links a:hover{background:#38bdf8;color:#0f172a;transform:translateY(-5px);}
+footer{text-align:center;padding:30px;background:#111827;margin-top:50px;color:#94a3b8;font-size:14px;}
+@media(max-width:700px){.hero h1{font-size:34px;}h2{font-size:28px;}.job-head{flex-direction:column;}}
+</style>
+</head>
+<body>
+
+<nav>
+<h2>Sudeepa.</h2>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#achievements">Achievements</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<h1>Hi, I'm <span>Sudeepa N S</span></h1>
+<p>SDET with 1.9 years architecting enterprise automation frameworks in Java, Playwright, and Selenium —
+from intelligent client-side automation and Agentic AI/MCP integration to scalable REST API and mobile
+test infrastructure.</p>
+<div class="tags">
+<span>Playwright Java</span><span>REST Assured</span><span>Selenium</span><span>Appium</span>
+<span>Agentic AI · MCP</span><span>Allure + AspectJ</span><span>CI/CD (AppCircle)</span>
+</div>
+<a class="btn" href="resume.pdf">Download Resume</a>
+</section>
+
+<section id="about" class="about">
+<h2>About Me</h2>
+<p class="section-sub">A quick snapshot of how I work and what I've built</p>
+<p>I'm a Software Development Engineer in Test focused on building automation that survives real-world chaos —
+frameworks that hold up under parallel execution, adapt to unfamiliar UIs, and don't fall over the moment an
+application changes. Over 1.9 years at Azentio Software, I've architected a portable client-side automation
+framework, integrated Agentic AI with the Model Context Protocol (MCP) for intelligent test generation, and
+rebuilt a legacy Selenium suite's execution reliability from 60% to 97%.</p>
+<p>Beyond the day job, I actively sharpen my problem-solving on LeetCode, where I've solved 500+ problems and
+hold a rating of 1700 — the same structured, edge-case-first thinking I bring to test design.</p>
+<div class="stat-grid">
+<div class="stat"><b>1.9 yrs</b><span>SDET Experience</span></div>
+<div class="stat"><b>5,000+</b><span>Automated Test Scenarios</span></div>
+<div class="stat"><b>60% → 97%</b><span>Execution Success Rate</span></div>
+<div class="stat"><b>100+</b><span>Parallel Threads, Zero Data Contamination</span></div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<p class="section-sub">Tools and technologies I work with</p>
+
+<div class="skills-group">
+<h4>Languages</h4>
+<div class="skills"><div class="skill">Java</div><div class="skill">SQL</div><div class="skill">Python</div><div class="skill">JavaScript</div></div>
+</div>
+
+<div class="skills-group">
+<h4>UI & Mobile Automation</h4>
+<div class="skills"><div class="skill">Playwright</div><div class="skill">Selenium</div><div class="skill">Appium</div><div class="skill">XPath</div><div class="skill">CSS Selectors</div><div class="skill">CLI Commands</div></div>
+</div>
+
+<div class="skills-group">
+<h4>API Testing</h4>
+<div class="skills"><div class="skill">REST Assured</div><div class="skill">Postman</div><div class="skill">Query-based Data Fetching</div><div class="skill">AppCircle REST APIs</div></div>
+</div>
+
+<div class="skills-group">
+<h4>Frameworks & Design</h4>
+<div class="skills"><div class="skill">BDD / Cucumber</div><div class="skill">TestNG</div><div class="skill">Maven</div><div class="skill">Page Object Model</div><div class="skill">SOLID Principles</div><div class="skill">Data-Driven Testing</div><div class="skill">Parallel Execution</div></div>
+</div>
+
+<div class="skills-group">
+<h4>AI & Advanced Automation</h4>
+<div class="skills"><div class="skill">Agentic AI</div><div class="skill">Model Context Protocol (MCP)</div><div class="skill">Playwright MCP</div><div class="skill">GitHub Copilot</div><div class="skill">Self-healing Tests</div><div class="skill">Intelligent Screen Scanning</div><div class="skill">Token Optimization</div></div>
+</div>
+
+<div class="skills-group">
+<h4>Reporting & DevOps</h4>
+<div class="skills"><div class="skill">Allure Report</div><div class="skill">AspectJ Listeners</div><div class="skill">SLF4J</div><div class="skill">Jenkins</div><div class="skill">Git</div><div class="skill">Docker</div><div class="skill">JIRA</div><div class="skill">IntelliJ IDEA</div><div class="skill">MySQL / JDBC</div></div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<p class="section-sub">What I've owned end-to-end</p>
+<div class="timeline">
+<div class="job">
+<div class="job-head">
+<h3>Software Development Engineer in Test (SDET)</h3>
+<span>Azentio Software · Bengaluru, India · Sep 2024 – Present</span>
+</div>
+
+<h4>Framework Architecture & Design</h4>
+<ul>
+<li>Architected a portable, client-side automation framework built on Playwright Java with an intelligent screen-scanning engine that dynamically identifies UI labels and generates label-ID mappings, cutting manual locator maintenance by 70%</li>
+<li>Designed the framework around SOLID principles for scalability and maintainability, so it adapts cleanly to unfamiliar client environments instead of requiring rework per app</li>
+<li>Built a query-based test data fetching mechanism that eliminates hardcoded test data, enabling dynamic scenario execution across multiple environments</li>
+<li>Implemented a multi-level data isolation strategy — scenario-level, thread-level, and global-level segmentation — enabling reliable parallel execution across 100+ concurrent threads with zero data contamination</li>
+<li>Diagnosed and resolved recurring "Target closed" errors in parallel runs by introducing proper browser/context memory management and thread-level teardown, eliminating leakage from threads left open after test completion</li>
+<li>Built reporting infrastructure using Allure with custom AspectJ listeners for real-time event capture, step-level visualization, and faster failure diagnostics</li>
+</ul>
+
+<h4>AI & Intelligent Automation</h4>
+<ul>
+<li>Designed an Agentic AI system leveraging the Model Context Protocol (MCP) integrated with Playwright CLI for intelligent, natural-language-driven test case generation</li>
+<li>Cut LLM API costs by 60% through token optimization — replacing verbose context payloads with grep-based search strategies and deterministic CLI command execution</li>
+<li>Architected a snapshot storage system that captures application state via CLI, stores it externally, and retrieves it on demand — reducing context window bloat during AI-driven test runs</li>
+<li>Engineered a self-healing layer where AI agents detect UI changes and automatically update test logic as the application evolves, reducing manual test maintenance</li>
+</ul>
+
+<h4>Test Execution & Scalability</h4>
+<ul>
+<li>Built and maintained enterprise UI/API automation frameworks in Java, Playwright, and REST Assured, managing 5,000+ automated test scenarios end-to-end</li>
+<li>Rebuilt a legacy Selenium framework, raising execution success from 60% to 97% through Page Object Model refactoring, intelligent retry mechanisms, and parallel execution design</li>
+<li>Developed a mobile automation suite covering 70+ end-to-end Android and iOS scenarios using Appium with a BDD Cucumber framework</li>
+<li>Integrated AppCircle REST APIs into the CI/CD pipeline to automate build triggering, APK/artifact download, and deployment — cutting manual setup effort by 85%</li>
+<li>Collaborated with 40+ engineers across QA, Development, and DevOps to drive continuous automation innovation and framework optimization</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<p class="section-sub">Systems I designed, built, and maintain</p>
+<div class="projects">
+
+<div class="card">
+<h3>Client-Side Screen-Scanning Automation Framework</h3>
+<p>A portable, scalable UI automation framework designed to adapt to unknown client environments without
+per-app rework. Follows SOLID principles for long-term maintainability.</p>
+<ul>
+<li>Intelligent screen-scanning engine generating dynamic label-ID mappings</li>
+<li>Query-based test data fetching, no hardcoded data</li>
+<li>Scenario / thread / global-level data isolation for safe parallel runs</li>
+</ul>
+<div class="tech"><span>Playwright Java</span><span>SOLID</span><span>Data-Driven</span></div>
+</div>
+
+<div class="card">
+<h3>Agentic AI Testing System (MCP + Playwright CLI)</h3>
+<p>An AI agent layer that generates and maintains tests using the Model Context Protocol, optimized to keep
+LLM usage cheap and fast.</p>
+<ul>
+<li>CLI-based deterministic command execution instead of verbose tool calls</li>
+<li>Grep-based context search — 60% reduction in LLM API cost</li>
+<li>Externalized snapshot storage to shrink context window usage</li>
+<li>Self-healing logic that updates locators/tests as the UI evolves</li>
+</ul>
+<div class="tech"><span>MCP</span><span>Playwright CLI</span><span>Agentic AI</span></div>
+</div>
+
+<div class="card">
+<h3>Selenium Framework Reliability Overhaul</h3>
+<p>Rebuilt an underperforming legacy Selenium suite into a stable, parallel-safe framework.</p>
+<ul>
+<li>Execution success rate improved from 60% to 97%</li>
+<li>Page Object Model refactor + intelligent retry mechanisms</li>
+<li>Fixed "Target closed" failures via proper memory management and thread-level cleanup</li>
+</ul>
+<div class="tech"><span>Selenium</span><span>POM</span><span>Parallel Execution</span></div>
+</div>
+
+<div class="card">
+<h3>REST API Automation Suite</h3>
+<p>API-layer automation built around REST Assured with query-driven data handling for consistent, environment-agnostic validation.</p>
+<ul>
+<li>Reusable request/response validation utilities</li>
+<li>Query-based data fetching shared with UI framework</li>
+</ul>
+<div class="tech"><span>REST Assured</span><span>Postman</span></div>
+</div>
+
+<div class="card">
+<h3>Mobile Automation Suite (Appium)</h3>
+<p>End-to-end mobile test coverage across Android and iOS built on a BDD Cucumber structure.</p>
+<ul>
+<li>70+ end-to-end mobile scenarios</li>
+<li>Shared data isolation strategy from the core framework</li>
+</ul>
+<div class="tech"><span>Appium</span><span>BDD Cucumber</span></div>
+</div>
+
+<div class="card">
+<h3>CI/CD Build & Deployment Automation</h3>
+<p>Automated the build-to-deploy pipeline by integrating directly with AppCircle's REST APIs.</p>
+<ul>
+<li>API-triggered build generation and APK/artifact download</li>
+<li>Automated deployment steps, removing manual setup</li>
+<li>85% reduction in manual CI/CD setup effort</li>
+</ul>
+<div class="tech"><span>AppCircle API</span><span>Jenkins</span><span>CI/CD</span></div>
+</div>
+
+</div>
+</section>
+
+<section id="achievements">
+<h2>Key Achievements</h2>
+<p class="section-sub">Measurable impact from framework and process improvements</p>
+<div class="achieve-grid">
+<div class="achieve"><b>70% less locator maintenance</b><span>Intelligent screen-scanning engine with dynamic label-ID mapping</span></div>
+<div class="achieve"><b>60% → 97% execution success</b><span>Selenium framework rebuilt with POM, retries, and parallel execution</span></div>
+<div class="achieve"><b>5,000+ test scenarios</b><span>UI/API automation with query-based data fetching across environments</span></div>
+<div class="achieve"><b>70+ mobile scenarios</b><span>iOS/Android E2E coverage via Appium, isolated at scenario/thread/global level</span></div>
+<div class="achieve"><b>60% lower LLM API cost</b><span>Token optimization using grep-based search and deterministic CLI execution</span></div>
+<div class="achieve"><b>40% faster execution</b><span>Framework optimization and CLI-based deterministic operations</span></div>
+<div class="achieve"><b>85% less manual CI/CD setup</b><span>AppCircle API integration for build, artifact, and deploy automation</span></div>
+<div class="achieve"><b>Zero data contamination</b><span>Across 100+ concurrent threads via multi-level data isolation</span></div>
+<div class="achieve"><b>Performance rating: 4/4</b><span>For technical contribution, architecture, and innovation</span></div>
+</div>
+
+<div class="coding-box" style="margin-top:35px;">
+<div class="item"><b>500+</b><span>LeetCode Problems Solved</span></div>
+<div class="item"><b>1700</b><span>LeetCode Rating</span></div>
+<div class="item"><b>B.Tech CSE</b><span>PES University, 2020–2024</span></div>
+<div class="item"><b>AWS · Git</b><span>Cloud Practitioner Essentials · Version Control (Coursera)</span></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Connect With Me</h2>
+<p>Let's connect! Feel free to reach out or check out my work.</p>
+<p style="font-size:15px;color:#94a3b8;">ssudeepans@gmail.com · +91-8310150766 · Bengaluru, India</p>
+<div class="social-links">
+<a href="https://www.linkedin.com/in/sudeepans/" target="_blank">💼 LinkedIn</a>
+<a href="https://github.com/usersudeep" target="_blank">💻 GitHub</a>
+<a href="https://leetcode.com/u/Sudeepa_Holla/" target="_blank">🟨 LeetCode</a>
+</div>
+</section>
+
+<footer>© 2026 Sudeepa N S</footer>
+
+</body>
+</html>
